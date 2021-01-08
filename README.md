@@ -41,9 +41,9 @@ move one cell above the goal, one-third of the time we move two cells above the 
 the time we move to the goal. <br /><br />
 
 
-### Question
-1) Comparisons of solutions & Implementation of all algorithms for the second case (stochastic wind) ?
-2) Comparisons of solutions for the stochastic case ? <br /><br />
+### Questions
+1) Comparisons of solutions & Implementation of all algorithms for the second case (stochastic wind) 
+2) Comparisons of solutions for the stochastic case  <br /><br />
 
 
 
@@ -79,17 +79,27 @@ policy manner and considering the effect of wind in each column, we can verify t
 same as the book until it reaches to the Goal point .
 
 
+<p align="center">
+<img width="890" height="750" alt="graph1" src="https://user-images.githubusercontent.com/71558720/104032529-476ce900-519c-11eb-957e-6273f6a73b2f.png"><br /><br />
+<p align="center">
+
+
+For the eligibility trace version, λ = 0:8 is selected. This value is selected such that its multiplication with 
+ is not too small to have a better short term memory. If γ is close to 1, then the trace does not change. When
+we apply the eligibility methods, as shown in Fig 3 and 4, the average number of steps to reach to the goal
+decreases. This illustrates the advantage of this methods. That is mainly because in the eligibility trace more
+weight is given to the most recent experiences that have more effects on reaching to the goal. Therefore, it
+gives a better performance.
 
 
 
+<p align="center">
+<img width="890" height="750" alt="graph2" src="https://user-images.githubusercontent.com/71558720/104032943-e0036900-519c-11eb-8cea-4e760c65d795.png"><br /><br />
+<p align="center">
 
 
 
-
-
-
-
-
+### 2) Comparison and discussion
 
 
 
