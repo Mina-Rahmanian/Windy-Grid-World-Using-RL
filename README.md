@@ -109,7 +109,7 @@ learn the optimal policy.
 
 
 <p align="center">
-<img width="890" height="750" alt="graph3" src="https://user-images.githubusercontent.com/71558720/104033208-3c668880-519d-11eb-8855-2e4d048da4d6.PNG"><br /><br />
+<img width="920" height="470" alt="graph3" src="https://user-images.githubusercontent.com/71558720/104033208-3c668880-519d-11eb-8855-2e4d048da4d6.PNG"><br /><br />
 <p align="center">
 
 
@@ -127,7 +127,7 @@ actions. However, in this case, the effect of this parameter is less that the le
 
 
 <p align="center">
-<img width="890" height="750" alt="graph4" src="https://user-images.githubusercontent.com/71558720/104033465-8d767c80-519d-11eb-8298-3425b42cd8a2.PNG"><br /><br />
+<img width="920" height="470" alt="graph4" src="https://user-images.githubusercontent.com/71558720/104033465-8d767c80-519d-11eb-8298-3425b42cd8a2.PNG"><br /><br />
 <p align="center">
 
 
@@ -142,7 +142,7 @@ goal which is does in 7 steps.
 
 
 <p align="center">
-<img width="890" height="750" alt="g5" src="https://user-images.githubusercontent.com/71558720/104033814-0aa1f180-519e-11eb-95dd-845914216e40.png"><br /><br />
+<img width="930" height="750" alt="g5" src="https://user-images.githubusercontent.com/71558720/104033814-0aa1f180-519e-11eb-95dd-845914216e40.png"><br /><br />
 <p align="center">
  
  
@@ -196,12 +196,12 @@ similar trend. It is clear that reaching the optimal policy is achieved more con
  
  
 <p align="center">
-<img width="890" height="750" alt="g7" src="https://user-images.githubusercontent.com/71558720/104035924-c2d09980-51a0-11eb-989d-c66976b6c3a0.png"><br /><br />
+<img width="930" height="810" alt="g7" src="https://user-images.githubusercontent.com/71558720/104035924-c2d09980-51a0-11eb-989d-c66976b6c3a0.png"><br /><br />
 <p align="center">
  
 
 <p align="center">
-<img width="890" height="750" alt="g8" src="https://user-images.githubusercontent.com/71558720/104036098-fd3a3680-51a0-11eb-8bae-1884e5bf513c.png"><br /><br />
+<img width="800" height="550" alt="g8" src="https://user-images.githubusercontent.com/71558720/104036098-fd3a3680-51a0-11eb-8bae-1884e5bf513c.png"><br />
 <p align="center">
 
 
@@ -209,9 +209,8 @@ That is clear since the optimal policy is obtained with number of steps taken le
 can play better in this case.
 
 
-
 <p align="center">
-<img width="890" height="750" alt="g9" src="https://user-images.githubusercontent.com/71558720/104036104-ff03fa00-51a0-11eb-9b5b-a0dd765e36c5.PNG"><br /><br />
+<img width="800" height="550" alt="g9" src="https://user-images.githubusercontent.com/71558720/104036104-ff03fa00-51a0-11eb-9b5b-a0dd765e36c5.PNG"><br />
 <p align="center">
 
 
