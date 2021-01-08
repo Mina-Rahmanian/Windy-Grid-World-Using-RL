@@ -166,20 +166,67 @@ epsilon helps to explore more for the best actions. In this stochastic environme
 greedy actions hence a higher epsilon is more functional which again increases the probability of finding the
 optimal policy.
  
+Figures 8-11 shows the results for this part. The Episode-Time step graphs is identical for all cases which
+mainly depends on the algorithm parameters. It should be noted that, the graphs in this case are a bit noisy
+which seems natural because of the stochastic nature of actions. It can be seen that the goal can be reached by
+taking 7 steps in SARSA and 8 steps in other methods. 
+
+As shown in the figures below, again eligibility trace methods have better performance since the plot slope has
+a similar value but in shorter time.
+ 
+ 
+<p align="center">
+<img width="890" height="750" alt="g6" src="https://user-images.githubusercontent.com/71558720/104035592-5190e680-51a0-11eb-851c-c6984dbec571.png"><br /><br />
+<p align="center">
  
  
  
+ #### 2-2) Comparison and discussion
+ 
+ 
+ As expected again, Fig 12 illustrates the superiority of Eligibility trace version on the other two methods.
+Among all the methods, Q-learning(λ) has the best performance. The noticeable feature is the similar trend at
+time steps <= 1000. This could be because of the fact that it takes some time until the eligibility trace factor
+shows its effect and learn from the previous experiences especially in the stochastic environment.
+Since the game has been performed in different actions space (4 actions, 8 deterministic actions and 8
+stochastic actions), it may also be useful to compare the ways this game is done. To do that I have compared
+the results for SARSA method only for all cases (Fig 13). The pattern for the other three method follow a
+similar trend. It is clear that reaching the optimal policy is achieved more conveniently through 8 actions case.
  
  
  
+<p align="center">
+<img width="890" height="750" alt="g7" src="https://user-images.githubusercontent.com/71558720/104035924-c2d09980-51a0-11eb-989d-c66976b6c3a0.png"><br /><br />
+<p align="center">
  
+
+<p align="center">
+<img width="890" height="750" alt="g8" src="https://user-images.githubusercontent.com/71558720/104036098-fd3a3680-51a0-11eb-8bae-1884e5bf513c.png"><br /><br />
+<p align="center">
+
+
+That is clear since the optimal policy is obtained with number of steps taken less than 15. In other words, we
+can play better in this case.
+
+
+
+<p align="center">
+<img width="890" height="750" alt="g9" src="https://user-images.githubusercontent.com/71558720/104036104-ff03fa00-51a0-11eb-9b5b-a0dd765e36c5.PNG"><br /><br />
+<p align="center">
+
+
+
  
- 
- 
- 
- 
- 
- 
- 
+## ** Mina R **
+
+
+
+
+
+
+
+
+
+
 
 
