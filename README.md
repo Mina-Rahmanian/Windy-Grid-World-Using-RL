@@ -52,13 +52,13 @@ the time we move to the goal. <br /><br />
 # Solution
 
 
-### Introduction
+### 1) Introduction
 
 In this case the methods are tested assuming 4 actions are permitted. The following parameter values are
-selected: ``α = 0:1``, ``ϵ = 0:01``, ``γ = 0:9``, ``λ = 0:8``. Starting from the point (4,1), we should rich the goal state (4,7)
+selected: ``α = 0.1``, ``ϵ = 0.01``, ``γ = 0.9``, ``λ = 0.8``. Starting from the point (4,1), we should rich the goal state (4,7)
 via the optimal policy. We compare the result with the example 6.5 result given in the book.<br />
 
-### 1) Graphical results
+### 1-1) Graphical results
 
 
 The algorithms is run for 1000 episodes. The ``α``, ``ϵ`` values are selected such that the learning is performed
@@ -84,7 +84,7 @@ same as the book until it reaches to the Goal point .
 <p align="center">
 
 
-For the eligibility trace version, λ = 0:8 is selected. This value is selected such that its multiplication with 
+For the eligibility trace version, ``λ = 0.8`` is selected. This value is selected such that its multiplication with 
  is not too small to have a better short term memory. If γ is close to 1, then the trace does not change. When
 we apply the eligibility methods, as shown in Fig 3 and 4, the average number of steps to reach to the goal
 decreases. This illustrates the advantage of this methods. That is mainly because in the eligibility trace more
@@ -99,7 +99,87 @@ gives a better performance.
 
 
 
-### 2) Comparison and discussion
+### 1-2) Comparison and discussion
 
+
+From fig 5 we can see the the eligibility trace versions have a better learning performance compared to their
+corresponding methods, both in number of steps and overall time needed to learning the optimal policy. The
+right plot shows the average number of time steps for the last episodes. It shows that all methods eventually
+learn the optimal policy.
+
+
+<p align="center">
+<img width="890" height="750" alt="graph3" src="https://user-images.githubusercontent.com/71558720/104033208-3c668880-519d-11eb-8855-2e4d048da4d6.PNG"><br /><br />
+<p align="center">
+
+
+The following Fig. 6 shows the impact of the learning rate and exploration value in the ϵ-greedy action
+selection. I have put the SARSA method graphs only. The results for the other three methods follow a similar trends.
+
+It is clear the larger learning rate (left plot) leads to a sharper learning at the beginning but ends up with
+constant horizontal lane with zero slope at the higher time steps; this means no further learning. Selecting
+smaller Alpha provides a consistent learning (slope changes in Episode-Time steps plots) although it requires
+more time. Overall, selecting the proper learning rate need a trade-off between these two issue which led to
+selecting 0.1 for this game.
+
+The right plot also demonstrates the lower ϵ provides a better learning since it allows the policy try more
+actions. However, in this case, the effect of this parameter is less that the learning rate.
+
+
+<p align="center">
+<img width="890" height="750" alt="graph4" src="https://user-images.githubusercontent.com/71558720/104033465-8d767c80-519d-11eb-8298-3425b42cd8a2.PNG"><br /><br />
+<p align="center">
+
+
+
+### 2) Kings moves with stochastic wind
+
+The algorithms is firstly run for a baseline case of king moves with deterministic wind in 8 actions. The
+algorithm parameters are the same as in the 4 actions case (``α = 0.1``, ``ϵ = 0.01``, ``γ = 0.9``, ``λ = 0.8`` Episodes). 
+Clearly it heads to shorter path as optimal policy. A brief result for this case is given in Fig 7. In this
+plots the optimal policy for all methods are given. Clearly, the agent follows the shortest path to reach to the
+goal which is does in 7 steps.
+
+
+<p align="center">
+<img width="890" height="750" alt="g5" src="https://user-images.githubusercontent.com/71558720/104033814-0aa1f180-519e-11eb-95dd-845914216e40.png"><br /><br />
+<p align="center">
+ 
+ 
+ 
+ #### 2-1) Graphical results
+ 
+ 
+ Adding the stochastic actions creates some confusion in finding the correct path and makes the path longer.
+Therefore, if it is possible, it is expected to reach to the goal in some steps between 7 and 15. It should be
+mentioned that for some cases, the algorithm is not able to find the optimal policy and the final result is
+different for different runs. It seems the parameters affect is more sensible and substantially changes the final
+optimal policy. That could be because of the stochastic nature of the action which may cause the agent to get
+stuck in some states.
+
+The following plots illustrates the simulation results for the King stochastic moves. In this case, the wind varies
+between episodes and unlike the deterministic kings moves, shorter path exists in the stochastic way. Running
+the program with similar parameters in section 1, does not lead to acceptable results. Hence we select the new
+values``α = 0.2``, ``ϵ = 0.2``, ``γ = 0.9``, ``λ = 0.75`` for 1000 Episodes. Here, a higher learning rate is selected which
+helps to find the updates faster without being stuck in bad stochastic directions. From the other side, higher
+epsilon helps to explore more for the best actions. In this stochastic environment, it seems better not to take
+greedy actions hence a higher epsilon is more functional which again increases the probability of finding the
+optimal policy.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
