@@ -1,4 +1,4 @@
-# Windy Grid World Using Reinforcement Learning
+# Windy Grid World + King's Moves Using Reinforcement Learning
 <br />
 
 
@@ -23,3 +23,26 @@ We are to implement several algorithms to solve this problem like:
 - Q-learning
 - Sarsa(𝜆)
 - Q(𝜆)
+<br /><br />
+
+
+We compare all solutions in terms of the optimal policies and episodes necessary for convergence. Also we select the best values for 𝜀 and 𝛼 for each case and we explain If they are different.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
