@@ -53,8 +53,29 @@ the time we move to the goal. <br /><br />
 
 
 ### Introduction
+
 In this case the methods are tested assuming 4 actions are permitted. The following parameter values are
-selected: \alpha = 0:1, \epsilon = 0:01, \gamma = 0:9, \lambda = 0:8. Starting from the point (4,1), we should rich the goal state (4,7)
-via the optimal policy. We compare the result with the example 6.5 result given in the book.
+selected: ``α = 0:1``, ``ϵ = 0:01``, ``γ = 0:9``, ``λ = 0:8``. Starting from the point (4,1), we should rich the goal state (4,7)
+via the optimal policy. We compare the result with the example 6.5 result given in the book.<br />
+
+1.1) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
