@@ -15,5 +15,11 @@ Shown inset below is a standard gridworld, withstart and goal states, but with o
 
 
 <p align="center">
-<img width="600" height="370" alt="wind1" src="https://user-images.githubusercontent.com/71558720/103968491-f6280f80-5131-11eb-8589-fced916613db.PNG"><br />
+<img width="600" height="370" alt="wind1" src="https://user-images.githubusercontent.com/71558720/103968491-f6280f80-5131-11eb-8589-fced916613db.PNG"><br /><br />
 <p align="center">
+
+We are to implement several algorithms to solve this problem like:
+- Sarsa
+- Q-learning
+- Sarsa(𝜆)
+- Q(𝜆)
