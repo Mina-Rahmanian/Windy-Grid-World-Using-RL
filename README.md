@@ -196,12 +196,12 @@ similar trend. It is clear that reaching the optimal policy is achieved more con
  
  
 <p align="center">
-<img width="930" height="810" alt="g7" src="https://user-images.githubusercontent.com/71558720/104035924-c2d09980-51a0-11eb-989d-c66976b6c3a0.png"><br /><br />
+<img width="930" height="750" alt="g7" src="https://user-images.githubusercontent.com/71558720/104035924-c2d09980-51a0-11eb-989d-c66976b6c3a0.png"><br /><br />
 <p align="center">
  
 
 <p align="center">
-<img width="800" height="550" alt="g8" src="https://user-images.githubusercontent.com/71558720/104036098-fd3a3680-51a0-11eb-8bae-1884e5bf513c.png"><br />
+<img width="840" height="550" alt="g8" src="https://user-images.githubusercontent.com/71558720/104036098-fd3a3680-51a0-11eb-8bae-1884e5bf513c.png"><br />
 <p align="center">
 
 
