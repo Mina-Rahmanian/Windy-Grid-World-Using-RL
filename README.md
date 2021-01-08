@@ -16,7 +16,7 @@ Useful bits of knowledge before start:
 
 
 <p align="center">
-<img width="600" height="370" alt="wind1" src="https://user-images.githubusercontent.com/71558720/103968491-f6280f80-5131-11eb-8589-fced916613db.PNG"><br /><br />
+<img width="580" height="350" alt="wind1" src="https://user-images.githubusercontent.com/71558720/103968491-f6280f80-5131-11eb-8589-fced916613db.PNG"><br /><br />
 <p align="center">
 
 We are to implement several algorithms to solve this problem like:
@@ -58,11 +58,25 @@ In this case the methods are tested assuming 4 actions are permitted. The follow
 selected: ``α = 0:1``, ``ϵ = 0:01``, ``γ = 0:9``, ``λ = 0:8``. Starting from the point (4,1), we should rich the goal state (4,7)
 via the optimal policy. We compare the result with the example 6.5 result given in the book.<br />
 
-1.1) 
+### 1) Graphical results
 
 
+The algorithms is run for 1000 episodes. The ``α``, ``ϵ`` values are selected such that the learning is performed
+leading to the shortest path in time steps as close as to the min time step (15). Smaller ``ϵ`` is preferred to let
+the algorithm to exploit the best action more frequently. This ensures finding the optimal path faster. For the
+learning rate, if it is too high learning happens faster but from a point it is saturated and no further policy
+improvements occur (the graph slope does not change any more). Smaller learning rate leads to continuous
+learning causing a convex graph which shows the slope increases but require more time. This convexity is
+clearer in the SARSA and Q-Learning methods. The effect of parameters is given in fig 6 as well which is
+indeed the main reason of selecting this values.
 
 
+The Episode-Time step plot for each method is given in fig 1-4. In all cases, the optimal policy converges to
+the shortest path which is shown in right part. Considering the average number of time steps for the last 100
+episodes in SARSA case is around 17 steps with a slightly improvements in Q-learning (the slopes are almost
+the same). As depicted in the right plots, starting from state (4,1) and following the arrows in the optimal
+policy manner and considering the effect of wind in each column, we can verify that the obtained policy is the
+same as the book until it reaches to the Goal point .
 
 
 
