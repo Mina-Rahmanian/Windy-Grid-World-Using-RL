@@ -11,7 +11,7 @@ Useful bits of knowledge before start:
 
 ##  Games' Description
 
-Shown inset below is a standard gridworld, withstart and goal states, but with one di↵erence: there is a crosswind running upwardthrough the middle of the grid. The actions are the standard four—up, down, right,andleft—but in the middle region the resultant next states are shifted upward by a“wind,” the strength of which varies from column to column. The strength of the wind is given below each column, in num-ber of cells shifted upward.
+Shown inset below is a standard gridworld, withstart and goal states, but with one difference: there is a crosswind running upwardthrough the middle of the grid. The actions are the standard four—up, down, right,andleft—but in the middle region the resultant next states are shifted upward by a“wind,” the strength of which varies from column to column. The strength of the wind is given below each column, in num-ber of cells shifted upward.
 
 
 <p align="center">
